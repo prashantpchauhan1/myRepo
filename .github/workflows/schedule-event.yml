@@ -2,7 +2,7 @@ name: Schedule Event
 
 on: 
   schedule:
-    - cron: '* * * * *'
+    - cron: '6 * * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
