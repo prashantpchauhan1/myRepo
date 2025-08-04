@@ -3,7 +3,7 @@ name: First WorkFlow
 on: push
 jobs:
   build:
-    runs-on: ubantu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Print build
         run: echo 'build'
@@ -13,7 +13,7 @@ jobs:
       - name: Print test
         run: echo 'test'
   deploy:
-    runs-on: ubantu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Print deploy
         run: echo 'deploy'
