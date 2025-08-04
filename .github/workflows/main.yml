@@ -1,0 +1,19 @@
+name: First WorkFlow
+
+on: push
+jobs:
+  build:
+    runs-on: ubantu-latest
+    steps:
+      - name: Print build
+        run: echo 'build'
+  test:
+    runs-on: windows-latest
+    steps:
+      - name: Print test
+        run: echo 'test'
+  deploy:
+    runs-on: ubantu-latest
+    steps:
+      - name: Print deploy
+        run: echo 'deploy'
