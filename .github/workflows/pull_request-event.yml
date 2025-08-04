@@ -1,6 +1,6 @@
 name: Pull Request Event
 
-on: puii_request
+on: pull_request
 jobs:
   build:
     runs-on: ubuntu-latest
