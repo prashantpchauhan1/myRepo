@@ -1,0 +1,9 @@
+name: Pull Request Event
+
+on: puii_request
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print build
+        run: echo 'build on pull request event'
