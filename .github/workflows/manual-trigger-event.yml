@@ -1,0 +1,10 @@
+name: Manual Trigger Event
+
+on: 
+  workflow_dispatch
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print build
+        run: echo 'build on manual trigger event'
