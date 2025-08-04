@@ -1,0 +1,11 @@
+name: Schedule Event
+
+on: 
+  schedule:
+    - cron: '* * * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print build
+        run: echo 'build on push event'
