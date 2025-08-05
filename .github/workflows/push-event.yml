@@ -1,0 +1,9 @@
+name: Push Event
+
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print build
+        run: echo 'build on push event'

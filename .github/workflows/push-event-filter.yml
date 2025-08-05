@@ -1,0 +1,14 @@
+name: Push Event Filters
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'doc/**'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print build
+        run: echo 'build for push filter'
