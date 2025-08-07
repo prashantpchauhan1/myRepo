@@ -1,0 +1,13 @@
+name: Java setup
+
+on: 
+  workflow_dispatch
+jobs:
+  Java:
+    runs-on: ubuntu-latest
+    steps:
+      - name: setup java environment
+        uses: actions/setup-java@v3.14.1
+        with:
+          java-version: 21
+      - run: javac --version
